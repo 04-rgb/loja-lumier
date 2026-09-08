@@ -1,0 +1,31 @@
+.header{
+    width: 100%;
+    padding: 20px 50px;
+    display:flex ;
+    justify-content:space-between ;
+    align-items:center ;
+    box-sizing: border-box;
+    border-bottom:1 px solid #f4f4f4 ;
+    background-color: rgb(244, 193, 202);
+
+}
+
+.logo{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight:bold ;
+}
+ .menu{
+    display:flex;
+    gap: 25px;
+ }
+
+ .menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+ }
+ .menu a:hover{
+text-decoration: underline;
+ }
