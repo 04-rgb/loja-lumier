@@ -1,0 +1,80 @@
+.cadastro {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff7f8;
+}
+
+.cadastro-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cadastro-container h1 {
+  text-align: center;
+  color: #8B3A62;
+  margin-bottom: 10px;
+}
+
+.cadastro-container > p {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #5C3A3A;
+}
+
+.campo input {
+  padding: 12px;
+  border: 1px solid #E8A9B8;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.campo input:focus {
+  border-color: #8B3A62;
+}
+
+button {
+  width: 100%;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background-color: #E8A9B8;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8B3A62;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+.login a {
+  color: #8B3A62;
+  font-weight: bold;
+  text-decoration: none;
+}
