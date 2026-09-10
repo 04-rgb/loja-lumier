@@ -25,7 +25,18 @@
     text-decoration: none;
     color: black;
     font-size: 16px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background-color: rgba(99, 6, 34, 0.7);
+    box-shadow: 0 0 15px  rgba(99, 6, 34, 0.7);
  }
  .menu a:hover{
-text-decoration: underline;
+text-decoration: 0 0 10px, rgba(99, 6, 34, 0.7);
  }
+
+ 

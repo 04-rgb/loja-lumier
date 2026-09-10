@@ -1,9 +1,16 @@
 import { Component } from '@angular/core';
+import { Carrinho } from '../../services/carrinho';
 
 @Component({
   selector: 'app-produtos',
-  imports: [],
   templateUrl: './produtos.html',
-  styleUrl: './produtos.css',
+  styleUrls: ['./produtos.css']
 })
-export class Produtos {}
+export class ProdutosComponent {
+  quantidadeCarrinho: number = 0;
+
+  adicionarAoCarrinho(nomeProduto: string) {
+    this.quantidadeCarrinho++;
+    alert(`${nomeProduto} foi adicionado ao carrinho!`);
+  }
+};
