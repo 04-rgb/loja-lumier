@@ -5,54 +5,23 @@
   text-align: center;
 }
 
-.favoritos h1 {
+.favoritos h2 {
   margin-bottom: 10px;
   color:#5c3a3a;
   font-family: Georgia, serif;
-  font-size: 42px
+  font-size: 32px
 }
 
-.descricao{
-  color: #777;
-  margin-bottom: 40px;
-}
-
-.favoritos-vazio {
+.lista-favoritos {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 60px 30px;
+  margin-top: 0 auto;
+}
+
+.lista-favoritos p {
   background: white;
-  border-radius: 16px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-}
-
-.coracao {
-  font-size: 80px;
-  color: #e8a9b8;
-  margin-bottom: 10px;
-}
-
-.favoritos-vazio h2 {
-  color: #5c3a3a;
-  font-size: 24px;
-}
-
-.favoritos-vazio{
-  color:#777;
-  line-height: 1.6;
-  margin-bottom: 25px;
-}
-
-.favoritos-vazio button {
-  border: none;
-  padding: 13px 25px;
-  border-radius: 8px;
-  background: #8b3a62;
-  color:white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.favoritos-vazio button:hover {
-  background: #6f2c4d;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  color : #5c3a3a;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
