@@ -20,8 +20,22 @@ import { Injectable } from '@angular/core';
 
     adicionar(produto:any) {
       this.favoritos.push(produtos);
-      
+
       this.salvar();
+    }
+    verificar(id:number): boolean {
+
+      for (let produtos of this.favoritos) {
+        if (produto.id === id) {
+
+          return true;
+        }
+      }
+      return false; 
+    }
+
+    private salvar() {
+      localStorage.setItem('favoritos', JSON.stringify(this.favoritos));
     }
   }
 
