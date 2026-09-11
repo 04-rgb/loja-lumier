@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Favoritos as FavoritosService } from '.../.../services/favoritos'
 
 @Component({
   selector: 'app-favoritos',
@@ -9,8 +10,20 @@ import { Component } from '@angular/core';
         export class Favoritos {
           produtos : string [] = [];
 
-          constructor (private favoritos: favoritos) {
-            this.produtos = this.favoritos.favoritos;
+          constructor (private favoritosService: favoritosService) {
+            this.produtos = this.favoritosService.favoritos;
+        }
+
+        remover(nomeProduto: string): void {
+          this.favoritosService.remover(nomeProduto);
+
+          this.produtos = this.favoritosService.favoritos;
+        }
+
+        limpar(): void {
+          this.favoritosService.limpar():
+
+          this.produtos = [];
         }
       }
         
