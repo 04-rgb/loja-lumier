@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
         styleUrl: './favoritos.css'
         })
         export class Favoritos {
+          produtos : string [] = [];
 
+          constructor (private favoritos: favoritos) {
+            this.produtos = this.favoritos.favoritos;
         }
+      }
+        
