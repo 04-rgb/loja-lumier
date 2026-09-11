@@ -7,6 +7,14 @@
 
         <p>Quando você encontrar algum produto que ama, pode adicioná-lo aos favoritos </p>
 
-        <button>Ver produtos</button>
+        <button>Ver produtos</button> 
+    </section>
+
+    <section class="lista-favoritos">
+        <h2> Meus Favoritos</h2>
+        @for (produto of produtos: track produto) {
+
+            <p> {{ produto }}</p>
+        }
     </section>
 </main>
