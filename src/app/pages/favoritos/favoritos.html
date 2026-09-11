@@ -3,18 +3,32 @@
     <section class="favoritos-vazio">
         <div class="coracao">♡</div>
         
-        <h2>Nenhum favoritos ainda</h2>
+        <h1>Meus Favoritos</h1>
 
-        <p>Quando você encontrar algum produto que ama, pode adicioná-lo aos favoritos </p>
+        <p class="descricao">Produtos que você adicionou aos seus favoritos </p> 
 
-        <button>Ver produtos</button> 
-    </section>
+        @if (produtos.lenght === 0) {
 
-    <section class="lista-favoritos">
-        <h2> Meus Favoritos</h2>
-        @for (produto of produtos: track produto) {
+            <p class="vazio">Você ainda não possui produtos favoritos </p>
 
-            <p> {{ produto }}</p>
+        } else {
+
+            <div class="lista-favoritos"> 
+                @for (for produto of produtos; track produto) {
+
+                    <div class="favorito-item">
+
+                        <span> {{ produto }} </span>
+
+                        <button class="btn-remover" (click)="remover(produto)">Remover</button>
+                        
+                    </div>
+                }
+            </div>
+
+            <button class="btn-limpar" (click)="linpar()">Limpar</button>
+         
         }
+        
     </section>
 </main>
